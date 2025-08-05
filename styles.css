@@ -225,3 +225,197 @@ footer p{
     margin-bottom: 0px;
     padding:0px;
 }
+
+/***media queries for responsiveness***/
+@media (max-width: 991px) {
+  .nav {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+  }
+
+  .mynav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+    margin: 10px 0 0 0;
+    font-size: 20px;
+  }
+
+  .mynav li {
+    display: block;
+    margin: 8px;
+  }
+
+  .intro {
+    flex-direction: column-reverse;
+    text-align: center;
+    padding: 0 10px;
+  }
+
+  .intro_text {
+    margin: 20px 0 0 0;
+    font-size: 18px;
+  }
+
+  .amos_img {
+    width: 90%;
+    max-width: 300px;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .skills {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 10px;
+  }
+
+  #deliveries_img {
+    width: 90%;
+    margin: 20px 0;
+  }
+
+  .text1 {
+    margin: 0;
+    text-align: center;
+  }
+
+  .portfolio {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .clients {
+    width: 90%;
+    height: auto;
+  }
+
+  #imgcaption {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  #imgcaption ul {
+    margin-left: 0;
+    padding-left: 0;
+  }
+
+  #interests ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+  }
+
+  #interests ul li {
+    margin: 10px;
+    padding: 5px 10px;
+  }
+
+  .my_footer li {
+    display: block;
+    margin: 10px 0;
+    text-align: center;
+  }
+}
+/****2nd media query***/
+@media (max-width: 991.98px) {
+  /* Center logo text */
+  .logo {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .logo a {
+    display: inline-block;
+    font-size: 28px;
+    font-weight: bold;
+    color: #ffffff;
+    text-decoration: none;
+  }
+
+  /* Stack and center skills section */
+  .skills {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0 10px;
+  }
+
+  .text1 {
+    margin: 20px auto 0 auto;
+    padding: 0;
+    text-align: center;
+    width: 100%;
+  }
+
+  .text1 ul {
+    padding: 0;
+    margin: 0;
+  }
+
+  .text1 ul li {
+    display: inline-block;
+    margin: 6px 10px;
+    text-align: center;
+  }
+
+  #deliveries_img {
+    width: 90%;
+    max-width: 400px;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+  }
+
+  /* Portfolio section responsiveness */
+  .portfolio {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .clients_area {
+    width: 90%;
+    text-align: center;
+  }
+
+  .clients {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  #imgcaption {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0;
+    margin: 0;
+    text-align: center;
+  }
+
+  #imgcaption h5 {
+    font-size: 20px;
+    margin-bottom: 6px;
+  }
+
+  #imgcaption ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+  #imgcaption ul li {
+    margin-bottom: 5px;
+    text-align: center;
+  }
+
+  #imgcaption button {
+    margin-top: 10px;
+  }
+}
