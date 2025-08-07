@@ -10,18 +10,24 @@
 <body>
     <main>
         <header>
-            <section class="nav">
-                <div class="logo"><a href="#">Amos Muturi</a></div>
-                <ul class="mynav">
-                  <li><a href="#about">About</a></li>
-                  <li><a href="#skills_id">Skills</a></li>
-                  <li><a href="#education">Education</a></li>
-                  <li><a href="#portfolio_id">Portfolio</a></li>
-                  <li><a href="#interests">Interests</a></li>
-                  <li><a href="#contact">Contact</a></li>
+          <section class="nav">
+             <div class="logo"><a href="#">Amos Muturi</a></div>
+    
+              <button class="hamburger" id="hamburger">
+                ☰
+               </button>
+
+                <ul class="mynav" id="navLinks">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills_id">Skills</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#portfolio_id">Portfolio</a></li>
+                <li><a href="#interests">Interests</a></li>
+                <li><a href="#contact">Contact</a></li>
                 </ul>
-            </section>
-        </header>
+          </section>
+</header>
+
         <div class="intro" id="about">
                 <p class="intro_text">Hi,<br> I am Amos Muturi,<br> <strong> A software engineering enthusiast.</strong><br>
                     I enjoy building modern web apps and mobile software, solving algorithmic problems, and learning scalable backend systems. 
@@ -117,5 +123,11 @@
           <p><center>&copy; Amos Muturi 2025. All Rights Reserved</center></p>
         </footer>
     </main>
+<script>
+  document.getElementById("hamburger").addEventListener("click", function () {
+    document.getElementById("navLinks").classList.toggle("show");
+  });
+</script>
+
 </body>
 </html>

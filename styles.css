@@ -5,21 +5,35 @@ body{
 }
 .nav{
 background-color: #065084;
-   max-height:100px;
-   width:100%;
+  /**max-height:100px;
+   width:100%;*/
    display: flex;
    align-items: center;
    justify-content: space-between;
-   padding-left: 15px;
-   padding-right: 15px;
+   /*padding-left: 15px;
+   padding-right: 15px;*/
+   padding: 10px 20px;
+   background-color: #065084;
+   position: relative;
+  z-index: 1000;
 }
 .logo a{
-    font-size: 30px;
+    font-size: 24px;
     font-weight: 700px;
     color: white;
     text-decoration: none;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /*font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;*/
 }
+.hamburger {
+  font-size: 26px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  display: none; /* hidden on desktop */
+  margin-left: auto;
+}
+
 .mynav{
     text-decoration: none;
     margin-right:0%;
@@ -417,5 +431,51 @@ footer p{
 
   #imgcaption button {
     margin-top: 10px;
+  }
+}
+
+
+/* Hide nav and show hamburger by default on mobile */
+@media (max-width: 768px) {
+  .mynav {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    background-color: #06508470;
+    width: 100%;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+  }
+  
+}
+  .mynav.show {
+    display: flex;
+  }
+  .hamburger {
+    display: block;
+    cursor: pointer;
+    width: 30px;
+    height: 22px;
+    position: relative;
+    margin-right: 10px;
+  }
+
+  .hamburger span {
+    display: block;
+    height: 4px;
+    width: 100%;
+    background: white;
+    margin-bottom: 5px;
+    border-radius: 2px;
+    transition: 0.3s ease;
+  }
+}
+
+/* Hide hamburger on desktop */
+@media (min-width: 769px) {
+  .hamburger {
+    display: none;
   }
 }
