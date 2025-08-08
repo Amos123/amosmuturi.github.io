@@ -208,6 +208,7 @@ button:hover a{
 }
 #interests ul li:hover{
     transform: translateY(-5px);
+    cursor:pointer;
 
 }
 /****End of Interest Section***/
