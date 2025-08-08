@@ -453,7 +453,7 @@ footer p{
     position: relative;
     margin-right: 10px;
   }
-.hamburger {
+.hamburger { /*s*hamburger edit**/
   font-size: 26px;
   background: none;
   border: none;
