@@ -23,6 +23,7 @@ background-color: #065084;
     color: white;
     text-decoration: none;
     /*font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;*/
+}
 .mynav{
     text-decoration: none;
     margin-right:0%;
@@ -426,6 +427,7 @@ footer p{
 
 
 /* Hide nav and show hamburger by default on mobile */
+/* MOBILE ONLY */
 @media (max-width: 768px) {
   .mynav {
     display: none;
@@ -438,21 +440,20 @@ footer p{
     left: 0;
     z-index: 1000;
   }
-  
-}
+
   .mynav.show {
     display: flex;
   }
+
   .hamburger {
     display: block;
     cursor: pointer;
     width: 30px;
     height: 22px;
     position: relative;
-    margin-right: 10px;
+    margin-left: auto; /* pushes hamburger to right */
   }
 
-}
   .hamburger span {
     display: block;
     height: 4px;
