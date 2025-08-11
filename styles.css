@@ -23,6 +23,9 @@ background-color: #065084;
     color: white;
     text-decoration: none;
     /*font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;*/
+}
+
+
 .mynav{
     text-decoration: none;
     margin-right:0%;
@@ -451,7 +454,14 @@ footer p{
     position: relative;
     margin-right: 10px;
   }
-
+.hamburger { /*s*hamburger edit**/
+  font-size: 26px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  display: none; /* hidden on desktop */
+  margin-left: auto;
 }
   .hamburger span {
     display: block;
@@ -470,5 +480,3 @@ footer p{
     display: none;
   }
 }
-
-
