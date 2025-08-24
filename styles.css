@@ -61,8 +61,16 @@ background-color: #065084;
     float:left;
     width:500px;
     left:50%;
-    max: width 100%;
+    /**max-width 100%;**/
     height:auto;
+    cursor: pointer;
+    border-radius: 20px;
+   
+}
+.amos_img:hover{
+   transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+  
 }
 .myresume{
     border:2px solid #ff000020;
@@ -73,6 +81,7 @@ background-color: #065084;
 }
 .myresume:hover{
     background-color:  #00ffff50;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
 }
 /****End of Intro Section*****/
 /******Skills Section*****/
@@ -133,10 +142,27 @@ h2{
     justify-content: end;
     font-size:40px;
 }
+.portfolio h6{
+
+  font-size: 20px;
+  text-align: left;
+  padding:10px;
+  margin:4px;
+}
+.portfolio p{
+    font-size: 18px;
+    text-align: left;
+    padding:10px;
+    margin:4px;
+} 
 .clients{
     height: 350px;
     width:350px;
     margin-bottom: 0px;
+}
+.clients:hover{
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
 }
 #imgcaption{
     margin-top: 0px;
